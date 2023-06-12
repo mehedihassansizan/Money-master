@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/012b9f097e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl text-center  text-red-600 font-bold">Money Master</h1>
+    </header>
+    <main>
+        <section class="mt-6 h-auto w-6/12
+        bg-gray-100 mx-auto">
+            <div class="income">
+                <h1 class="pt-6 font-medium text-4xl text-center text-blue-700">Income</h1>
+                <h1 class="mr-4 text-xl text-center mt-6"><span class="font-medium ">Income:</span><input
+                class="ml-[6px] bg-gray-300 pl-2 rounded-lg" id="income-input" type="number"></h1>
+            </div>
+            <div class="expenses ">
+                <h1 class="pt-6 font-medium text-4xl text-center text-blue-700">Expenses</h1>
+                <!-- Food -->
+                <div>
+                    <h1 class="text-xl text-center mt-6"><span class=" font-medium ">Food:</span><input class="ml-[6px] bg-gray-300 pl-2 rounded-lg" id="food-input" type="number"></h1>
+                </div>
+                <!-- Rent -->
+                <div class="pl-1">
+                    <h1 class="text-xl text-center mt-6"><span class="font-medium ">Rent:</span><input class="ml-[6px] bg-gray-300 pl-2 rounded-lg" id="rent-input" type="number"></h1>
+                </div>
+                <!-- clothes -->
+                <div class="pr-6">
+                    <h1 class="text-xl text-center mt-6"><span class="font-medium ">Clothes:</span><input class="ml-[6px] bg-gray-300 pl-2 rounded-lg" id="colthes-input" type="number"></h1>
+                </div>
+            </div>
+            <button id="cal-btn" class="grid justify-items-center bg-blue-400 px-4 py-2 font-medium text-white mt-6 mx-auto">Calculator</button>
+
+            <!-- total Expenses -->
+            <h1 class="text-2xl font-medium text-center mt-6">Total Expenses: <span id="total-expenses">00</span></h1>
+            <!-- Balance -->
+            <h1 class="text-3xl font-medium text-center mt-4">Balance: <span id="total-balance">00</span></h1>
+            <!-- saving -->
+            <div class="flex">
+                <h1 class="ml-48 text-xl mt-6"><span class="font-bold">save:</span><input class="ml-[6px] w-20 h-10 bg-gray-300 pl-2 rounded-lg mr-4" id="save-input" type="number"><i class="fa-solid fa-percent"></i></h1>
+                <button id="save-btn" class="rounded-lg bg-blue-400 px-4 py-2 font-medium text-white mt-6 ml-4">save</button>
+            </div>
+            <h1 class="text-2xl font-medium text-center mt-6">Saving Ammount: <span id="save-ammount">00</span></h1>
+            <h1 class="text-2xl font-medium text-center mt-4">Remaining Balance: <span id="remaining-balance">00</span></h1>
+        </section>
+    </main>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
